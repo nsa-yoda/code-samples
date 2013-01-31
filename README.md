@@ -1,4 +1,4 @@
-code-samples
+Code Samples
 ============
 
-Code samples that I've written
+Just a collection of short code samples that I've written over the years.
