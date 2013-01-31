@@ -1,0 +1,11 @@
+These are a collection of classes which act as the backbone to one of my
+proprietary systems that I am currently working on as of June 2012. 
+
+These classes interface between Foursquare, Yahoo Locals and the backend database
+as well as Google Maps to determine what the user is searching for, 
+where the user is searching for that data, as well as returning a list of 
+places that match the search parameters and location given by the user.
+
+This code is incomplete and is something that I am still building upon.
+
+Many instructions left that I still have to bum off :)

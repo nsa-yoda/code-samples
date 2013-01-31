@@ -1,0 +1,28 @@
+<!--
+Extension: +1 Button
+Location: https://chrome.google.com/webstore/detail/%2B1-button-by-juan-leonard/oekoiloodibphdhefidheecofifplcmf
+-->
+
+<style>
+body{ min-width:150px; overflow-x:hidden; text-align:center;}
+a{ text-decoration:none; color:#808285; }
+</style>
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {parsetags: 'explicit'}
+</script>
+
+<script>
+/* Initialize the extension */
+function init(){
+    chrome.tabs.getSelected(null, function(tab) {
+        var current_tab = tab;
+        document.write('<g:plusone count="true" href="' + current_tab.url + '"></g:plusone>');
+        gapi.plusone.go();
+    });
+}
+
+/* Listen for a click - if clicked, call init() to initialize the function */
+chrome.browserAction.onClicked.addListener(init);
+init();
+</script>

@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* HELPS CENTER EVERYTHING PERFECTLY */
+*{
+    margin:0 auto;
+    padding:0;
+}
+
+/*
+ * CUSTOM
+*/
+::selection, ::-moz-selection, ::-webkit-selection {
+    background:#cc0000;
+    color:#ffffff;
+}
+/*@font-face {
+    font-family: ;
+    src: url('century_gothic.ttf');
+}
+@font-face {
+    font-family: century_gothic_bold;
+    src: url('century_gothic_bold.ttf');
+}
+@font-face {
+    font-family: century_gothic_italic;
+    src: url('century_gothic_italic.ttf');
+}*/
+
+@font-face {
+    font-family: "century_gothic";
+    src: url("century_gothic.ttf");
+}
+@font-face {
+    font-family: "century_gothic_bold";
+    src: url("century_gothic_bold.ttf");
+    font-weight: bold;
+}
+
+a:link, a:visited {
+    color: #c30;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #600;
+    text-decoration: underline;
+}
+
+/* GLOBAL */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic", century_gothic, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    background: #000000;
+    background-image:url('../images/global/background.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+hr{
+    border-color:#502;
+}
+#wrapper{
+    height:auto;
+    min-height:600px;
+    margin:auto;
+    width: 960px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+}
+#header {
+    width: auto;
+    height: 50px;
+    padding: 25px 45px 25px 45px;
+    text-align: left;
+    float: left;
+    background-color:#000000;
+    display:block;
+    clear:both;
+}
+#nav{
+    background-image:url('../images/global/nav/nav_yellow_bg.png');
+    width:886px;
+    float:left;
+    height:auto;
+    font-size:14px;
+    }
+    #nav ul {
+        margin-left: 0;
+        padding-left: 0;
+        display: inline;
+    } 
+    #nav ul a { color:#000000; }
+    #nav ul a:hover { color:#FF1010; text-decoration:none; }
+    #nav ul li {
+        margin-left: 0;
+        padding: 8px 25px 0px 25px;
+        border-left: 1px solid #C0A835;
+        list-style: none;
+        display: inline-block;
+        height:28px;
+    }
+    #nav ul li.first {
+        margin-left: 0;
+        border-left: none;
+        list-style: none;
+        display: inline;
+        padding-left:46px;
+    }
+    #nav_arrow{
+        display:inline;
+        float:right;
+        height:36px;
+        width:74px;
+        background-image:url('../images/global/nav/nav_right_arrow.png');
+    }
+#content {
+    width: 960px;
+    float: left;
+    min-height: 600px;
+}
+h1 {
+    font-weight:        normal;
+    font-size:          14px;
+    margin:             0 0 4px 0;
+}
+.sfTable {
+  display : table;
+  border-collapse: collapse;
+  width : 207px;
+  height : 57px;
+}
+.sfGithub {
+  border : 1px solid #D4D4D4;
+  background-color: #222222;
+}
+.sfRow {
+  display : table-row;
+  width : 100%;
+}
+.sfCell1 {
+  display : table-cell;
+  width : 48px;
+  padding : 4px 0px 0px 5px;
+}
+.sfCell2 {
+  display : table-cell;
+  vertical-align : top;
+  text-align : left;
+  padding-left : 10px;
+  padding-top : 3px;
+  width : 146px;
+}
+.sfCell2 div.sfHandle {
+  font : 13px "Tahoma",Helvetica,Arial,sans-serif;
+  font-weight : bold;
+  margin-right : 5px;
+  width : 140px;
+  word-wrap: break-word;
+}
+.sfGithub div.sfHandle {
+  color : #CCCCCC;
+}
+.sfCell2 div.sfFans {
+  font : 11px "Tahoma",Helvetica,Arial,sans-serif;
+  color : #999;
+  font-weight : bold;
+  padding-top : 5px;
+}
+.sfCell2 div.sfFans span { padding-right : 10px; }
+.sfCell2 div.sfFans span.hireable { color : #A229A9; }
+.sfGithub .sfCell2 div.sfFans span.public_repos { 
+  background : url(../images/global/github_repos.gif) no-repeat left center; 
+  padding-left : 20px;
+}
+.sfGithub .sfCell2 div.sfFans span.followers { 
+  background : url(../images/global/githubr.ico) no-repeat left center; 
+  padding-left : 20px;
+}
+img.ico {
+  vertical-align : middle;
+  margin-right : 5px;
+}
+img.sfProfilePic {
+  -webkit-border-radius: 4px; /* Saf3-4, iOS 1-3.2, Android ≤1.6 */
+  border-radius: 4px; /* Opera 10.5, IE9, Saf5, Chrome, FF4+, iOS 4, Android 2.1+ */
+  /* useful if you don't want a bg color from leaking outside the border: */
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+a.sfLink {
+  text-decoration: none;
+}
+#githubFlair{
+    display:inline-block;
+    width: 200px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    *display: inline;
+    vertical-align: top;
+    margin-right: 15px;
+    margin-top: -1px;
+    zoom: 1;
+}
+
+
+/* ABOUT PAGE */
+#about_head{
+    text-align:center;
+    font-size:20px;
+    margin-top:30px;
+}
+#about_text{
+    text-align:right;
+    padding-left:20px;
+    padding-right:20px;
+    margin-top:20px;
+}
+
+
+/* WEBDEV PAGE */
+#webdev{
+    height:auto;
+    min-height:100%;
+}
+#webdev ul{
+    float:left;
+    clear:both;
+    display: inline;
+    height:241px;
+    /*border:1px solid blue;*/
+    margin-bottom:20px;
+    margin-top:20px;
+}
+#webdev ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left:55px;
+    text-align:center;
+    /*border:1px solid red;*/
+    width:186px;
+    height:240px;
+}
+#webdev ul li a{
+    color:#FDDD46;
+    font-size:14px;
+    /*border:1px solid yellow;*/
+    height:auto;
+}
+#webdev ul li span{
+    /*border:1px dotted blue;*/
+}
+#webdev ul li.first{
+    margin-left:20px;
+}
+#webdev ul li img{
+    width:180px;
+    height:130px;
+    border:3px solid #282828;
+    text-decoration:none;
+    /*border:1px solid green;*/
+}
+
+.wdPort_wrapper{
+    width:910px;
+    height:184px;
+    padding:2px 0px 0px 2px;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-color:black;
+    }
+    .wpPort_innerRight{
+        float:right;
+        width:710px;
+        height:180px;
+        }
+        .wpPort_innerRight h1{
+            color:#FDDD46;
+        }
+        .wpPort_innerRight p{
+            margin-left:15px;
+        }
+    .wpPort_innerLeft{
+        float:left;
+        width:190px;
+        height:180px;
+        }
+        .wpPort_innerLeft img{
+            border:none;
+            width:180px;
+            height:130px;
+        }
+
+#quote{
+    color:#FFFFFF;
+    width:50%;
+    margin-top:20px;
+    margin-bottom:40px;
+}
+
+/* CLASSES */
+.white{ color: #FFFFFF; }
+.yellow{ color: #FDDD46; }
+.cream{ color: #86FF86; }
+.gray{ color: #6F6F6E; }
+.fuchsia{ color: #34B2BE; }
+.bqstart{
+    float:left;
+    font-size:700%;
+    color:#FF0000;
+    height:45px;
+    margin-top:-29px;
+    padding-top:2px;
+    margin-bottom:-43px;
+    margin-left:-38px;
+}
+.bqend{
+    float:right;
+    font-size:700%;
+    color:#FF0000;
+    height:25px;
+    margin-top:-25px;
+    padding-top:0px;
+    margin-right:277px;
+}
+.headertop{ font-size:24px; 
+            font-family: "Century Gothic Bold", century_gothic_bold, sans-serif;
+            font-weight: bold; letter-spacing:1px; }
+.headerbot{ font-size:14px; text-transform:uppercase; letter-spacing:1px; }
+.StrikeThrough{
+    color:#FDDD46;
+    text-decoration:line-through;
+}
+.float{
+    float:left;
+    width:95%;
+    text-align:left;
+}
+.right{
+    float:right;
+}
+.php, .python, .js, .html, .css{
+    width:129px;
+    height:115px;
+    margin: 25px 30px 5px 30px;
+    display:inline-block;
+    background-image:url('../images/icons/languages.png');
+    list-style-type:none;
+}
+.php{ background-position:-6px -1175px; }
+.python{ background-position:-6px -1290px; }
+.js{ background-position:-6px -449px; }
+.html{ background-position:-6px -1640px; }
+.css{ background-position:-6px -1758px; }
+
+/* OVERRIDES */
+#about_text h1, #about_text p{
+    margin-bottom:20px;
+}
+#about_text h2{
+    margin-top:20px;
+}
+#about_text li:before{
+    content: "`*"
+}
+#about_text ul{
+    list-style-type:none;
+    margin-left:20px;
+}
+#about_text ul li div{
+    margin-left:35px;
+    margin-bottom:0px;
+}
+#about_text ul li div ul li{
+    margin-left:5px;
+    margin-bottom:0px;
+}
+
