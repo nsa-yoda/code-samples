@@ -4,7 +4,7 @@
 
 # Get a user number, or default to 25
 $num = $_GET['num'] ? $_GET['num'] : 25;
-$sqrt = $_GET['guess'] ? $_GET['guess'] : 1;
+$sqrt = $_GET['guess'] ? $_GET['guess'] : $num / 3;
 
 # General inits, not required, but legibility
 $sqrt;
