@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Styled OL Test</title>
+        <style>
+            ol { counter-reset: item; }
+            ol li { display: block }
+            ol li:before { content: counter(item) ". "; counter-increment: item; }
+            ol.custom{ padding: 0; counter-reset: item; }
+            ol.custom li.aa:before { content: counter(item) "A. "; counter-reset: subsection; }
+            ol.custom li.bb:before { content: counter(item) "B. "; counter-increment:subsection; }
+            ol.custom li.cc:before { content: counter(item) "C. "; counter-increment:subsection; }
+        </style>
+    </head>
+    <body>
+        <ol class="custom">
+            <li></li>
+            <li></li>
+            <li class="aa"></li>
+            <li class="bb"></li>
+            <li class="cc"></li>
+            <li></li>
+            <li></li>
+            <li class="aa"></li>
+            <li class="bb"></li>
+            <li class="cc"></li>
+        </ol>
+    </body>
+</html>
