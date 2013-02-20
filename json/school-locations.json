@@ -1,0 +1,51 @@
+[
+  {
+    "Name": "Touro College of Osteopathic Medicine",
+    "Website": "http://med.touro.edu",
+    "Enabled": "Yes",
+    "Geo": {
+      "Latitude": "74.231231",
+      "Longitude": "41.213122",
+      "Altitude": "129"
+    }, 
+    "MapDisplay": {
+      "Icon": "default.gif",
+      "Location": {
+        "WorldLevel": "NYCLI",
+        "LocationLevel": "Undergraduate"
+      }
+    },
+    "Information": {
+      "Name": "Touro College of Osteopathic Medicine",
+      "Address": "230 W 125th St.",
+      "City": "New York",
+      "State": "NY", 
+      "Country": "United States",
+      "Zip": "10027"
+    }
+  }, {
+    "Name": "Touro College Berlin",
+    "Website": "http://berlin.touro.edu",
+    "Enabled": "Yes",
+    "Geo": {
+      "Latitude": "42.231231",
+      "Longitude": "31.213122",
+      "Altitude": "551"
+    }, 
+    "MapDisplay": {
+      "Icon": "default.gif",
+      "Location": {
+        "WorldLevel": "World",
+        "LocationLevel": "Berlin"
+      }
+    },
+    "Information": {
+      "Name": "Touro College Berlin",
+      "Address": "Am Rupenhorn 5",
+      "City": "Berlin",
+      "State": "Berlin", 
+      "Country": "Germany",
+      "Zip": "14055"
+    }
+  }
+]
