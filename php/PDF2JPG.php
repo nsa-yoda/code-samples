@@ -7,7 +7,7 @@
 #
 # Description: Small function to convert a PDF to multiple sized JPEGs
 #
-# Written Feb 20th 2009 by Juan L. Sanchez [juan.sanchez@manlawonline.org]
+# Written Feb 20th 2009 by Juan L Sanchez
 #
 # NOTE: Comment out $owner, $group, and exec("chown $owner:$group $dir") if it
 # not needed. Also, might want to add some sort of check to the directory if
